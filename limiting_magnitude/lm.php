@@ -668,7 +668,7 @@ $stars = [
         <img src="img/bigskyrjm.gif" alt="Sky Areas Map">
     </div>
 
-    <form method="post" action="index.php">
+    <form method="post" action="lm.php">
 
         <label for="constellation">صورت فلکی</label>
         <select name="constellation">
