@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Tanha;
+    src: url('Tanha.ttf');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tanha;
+    color: #F8F3D4;
+    color: #00B8A9;
+    color: #F6416C;
+    color: #FFDE7D;
+    color: #003833;
+}
+
+.canvas {
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.stress-board {
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #e0f3fa;
+    background: -moz-linear-gradient(top, #e0f3fa 0%, #d8f0fc 78%, #d8f0fc 78%, #b8e2f6 78%, #b8e2f6 78%, #d8f0fc 92%, #b6dffd 100%);
+    background: -webkit-linear-gradient(top, #e0f3fa 0%, #d8f0fc 78%, #d8f0fc 78%, #b8e2f6 78%, #b8e2f6 78%, #d8f0fc 92%, #b6dffd 100%);
+    background: linear-gradient(to bottom, #e0f3fa 0%, #d8f0fc 78%, #d8f0fc 78%, #b8e2f6 78%, #b8e2f6 78%, #d8f0fc 92%, #b6dffd 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd', GradientType=0);
+}
+
+.stress-board .t1me {
+    margin: 0;
+    display: inline-block;
+}
+
+.stress-board .t1me b {
+    font-size: 40px;
+}
+
+.stress-board .t1me b::before {
+    font-size: 15px;
+    content: 't1me ';
+    margin-right: 30px;
+    color: #00574f;
+}
+
+.stress-board .sc0re {
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+.stress-board .sc0re b {
+    font-size: 40px;
+}
+
+.stress-board .sc0re b::before {
+    font-size: 15px;
+    content: 'sc0re ';
+    margin-right: 30px;
+    color: #00574f;
+}
+
+.play {
+    text-align: center;
+}
+
+.play #otype {
+    display: none;
+    vertical-align: middle;
+    background-color: #F6416C;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 5px;
+    color: white;
+    float: right;
+}
+
+.play #oname {
+    background-color: #FFDE7D;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+    display: block;
+}
+
+.play #response {
+    display: inline-block;
+}
+
+.play #response #code {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.play #response #go {
+    border: none;
+    min-width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background: #e6f0a3;
+    background: -moz-linear-gradient(top, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%);
+    background: -webkit-linear-gradient(top, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%);
+    background: linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043', GradientType=0);
+}
+
+.play #response #go:hover {
+    background: #e6f0a3;
+    background: -moz-linear-gradient(top, #e6f0a3 0%, #d2e638 71%, #d2e638 71%, #c3d825 72%, #dbf043 100%);
+    background: -webkit-linear-gradient(top, #e6f0a3 0%, #d2e638 71%, #d2e638 71%, #c3d825 72%, #dbf043 100%);
+    background: linear-gradient(to bottom, #e6f0a3 0%, #d2e638 71%, #d2e638 71%, #c3d825 72%, #dbf043 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043', GradientType=0);
+}
+
+.records table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.records table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.records table th,
+.records table td {
+    padding: 12px 15px;
+}
+
+.records table .answers-list tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.records table .answers-list tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.records table .answers-list tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.records table .answers-list tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.✔,
+.✘ {
+    background-image: url('media/cross.gif');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+}
+
+.✔ {
+    background-image: url('media/check.gif');
+}
